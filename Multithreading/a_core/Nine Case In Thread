@@ -1,0 +1,35 @@
+All 9 Case In Thread
+====================
+
+Case: 1 : Thread Scheduler
+==========================
+	It is part of JVM, it is responsible to schedule Thtread i.e if multiple threads are waiting
+	to get the chance of execution then in which order threads will be executed is desided by thread
+	scheduler.
+	We can't except exact algorithm followed by thread schedule it varied from Jvm to jvm hence
+	we cant except thread execution order and exact output, hence whenever comes to multithreading there
+	is no guirenty for exact output but we can provide several possible output.
+
+Case: 2 : Difference Between t.start() and t.run()
+==================================================
+
+
+Case: 3 : Thread.start()
+=========================
+
+	Thread.start() method is responsible to register the thread with the ThreadScheduler and all other mandetory
+	activity, Hence without executing thread.start() method ther no chance of starting a new thred in java due
+	to this thread,start() mrthod is considered as Heart of MultiThreading.
+
+Case : 8 : Life Cycle Of thread
+
+    New/Born --- t.start() ---> Ready/Runnable --- Process Allocated ---> Running --- complete ---> Deat/Terminated
+
+
+Case 9 : IllegalThreadStateException
+
+        public static void main(String[] args) {
+               MyThread mt = new MyThread();
+               mt.start();
+               mt.start();
+        }

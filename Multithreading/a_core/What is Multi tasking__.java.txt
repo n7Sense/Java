@@ -1,0 +1,52 @@
+ 1. What is Multi Threading  Or What is Multi tasking...?
+ 
+A. MultiTasking :
+
+	Executing several task simaltaneiously is concept of multitasking. There 2 types of multitasking
+	a) Process based multitasking
+	b) Thread based multitasking
+	
+	a) Process based multitasking
+		Executing several task simaltaneiously where each task(job) is separate independent Program(Process).
+		i.e there is no depedency between one process to another.
+		Process based multitasking is best sutable at OS level.
+		
+	b) Thread based multitasking
+		Executing several task simaltaneiously where each task(job) is separate independent part of the same
+		Program, and each independent part is called a Thread.
+		Thread based multitasking is best sutable at Programatic level.
+		
+B. Advantages of MultiTasking
+		Whether it is Thread based or Process, the main objective of the multitasking is
+		To reduce Idle time of the processor and to reduce reduce response time of the processor and improve
+		performence.
+	
+C. Where We should go for Multithreading. Or whta is the main importent application area of Multithreading.?
+	To develop Multi media graphics.
+	To develop video games.
+
+D. Wheere we can use Multithreading concept.
+	To develop Web Server and Application Server (eg Tomcat Server have default 60 threads).
+	
+	When compared with the old languages developing multithreaded application in java is very
+	easy becasuse java provide inbuild support for multithreading with rich API linke
+	Thread, Rinnable, Thread Group.
+	
+	
+	
+
+
+
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
+ 
+ 
+ 
