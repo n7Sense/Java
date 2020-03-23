@@ -1,4 +1,4 @@
-package z_example.basic;
+package Multithreading.z_example.basic;
 
 public class MyThread extends Thread{
 
