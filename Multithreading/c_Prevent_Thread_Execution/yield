@@ -1,0 +1,10 @@
+1: Yield();  public static native void yield();
+	yield method causes to pause current executing thread to give the chance for other waiting thread
+	with same priority if there is no waithing thread or all waiting threads have low priority
+	then same thread can continue it's execution.
+
+	If multiple threads are waiting with the same priority then which waiting thread will get the chance
+	we cant accept it depends on ThreadScheduler.
+
+
+    Note: Some platform won't provide proper support for yield() method.

@@ -1,0 +1,13 @@
+Prevent Thread Execution
+
+1: yield();
+    public static native void yield();
+
+2: join();
+    public final synchronized void join()
+    public final synchronized void join(long millis)
+    public final synchronized void join(long millis, long nanos)
+
+3: sleep();
+    public static native void sleep(long millis);
+    public static native void sleep(long millis, long nanos);

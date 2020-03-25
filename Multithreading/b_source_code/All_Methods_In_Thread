@@ -1,0 +1,16 @@
+All Methods In Thread
+======================
+
+1.  private static native void registerNatives();
+
+2. public static native Thread currentThread();
+
+3. public static native void yield();
+
+4. public static native void sleep(long paramLong) throws InterruptedException;
+
+5. private native void start0();
+
+6. private native boolean isInterrupted(boolean paramBoolean);
+
+7. public final native boolean isAlive();
