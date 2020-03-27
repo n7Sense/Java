@@ -1,0 +1,26 @@
+JOIN    :       public final synchronized void join()                           throws IE
+                public final synchronized void join(long millis)                throws IE
+                public final synchronized void join(long millis, int nanos)     throws IE
+============================================================================
+
+    If Thread want to wait until completing some other thread then we should go for Join method.
+
+    Example: If Thread t1 want to wait until completing Thread t2, then t1 has to call t2.join();
+                if t1 execute t2.join() then t1 entern into waiting state until completiom of
+                t2.
+
+
+    venue fixing (t1)       Wedding card print (t2)       wedding card distribute (t3)
+
+                                    t1.join()                       t2.join();
+
+
+    Note :  Wedding card printing(t2) wait until completion of venue fixing(t1) therefor t2 execute t1.join();
+    Note :  Wedding card distributing(t3) wait until completion of venue fixing(t1) therefor t2 execute t1.join();
+    Note :  Every join method throws Interrupted Exception which is checked Exception, hence compalsory we should
+            handle this Exception either by using try-catch or by throws key word otherwise we will get compile
+            time error.
+
+    Note:   why int in this method for nano second
+            public final synchronized void join(long millis, int nanos)
+            because if no is 2500 so after 2999,  ++1 become 3000 this value for milisecond and 999 is for nano.
