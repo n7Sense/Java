@@ -9,7 +9,6 @@ public class MyThread extends Thread {
             System.out.println("Sheeta Threadd");
             try{
                 Thread.sleep(2000);
-
             }catch (InterruptedException ie){
 
             }
