@@ -6,5 +6,65 @@
 	If multiple threads are waiting with the same priority then which waiting thread will get the chance
 	we cant accept it depends on ThreadScheduler.
 
+    Note: Some platform won't provide proper support for yield() method.(Premitive Scheduling)
 
-    Note: Some platform won't provide proper support for yield() method.
+
+=)Use of yield method:
+
+    *Whenever a thread calls java.lang.Thread.yield method, it gives hint to the thread scheduler that it
+    is ready to pause its execution. Thread scheduler is free to ignore this hint.
+
+    *If any thread executes yield method , thread scheduler checks if there is any thread with same or high
+     priority than this thread. If processor finds any thread with higher or same priority then it will move
+     the current thread to Ready/Runnable state and give processor to other thread and if not – current thread
+     will keep executing.
+
+    // Java program to illustrate yield() method
+    // in Java
+    import java.lang.*;
+
+    // MyThread extending Thread
+    class MyThread extends Thread
+    {
+        public void run()
+        {
+            for (int i=0; i<5 ; i++)
+                System.out.println(Thread.currentThread().getName()
+                                    + " in control");
+        }
+    }
+
+    // Driver Class
+    public class yieldDemo
+    {
+        public static void main(String[]args)
+        {
+            MyThread t = new MyThread();
+            t.start();
+
+            for (int i=0; i<5; i++)
+            {
+                // Control passes to child thread
+                Thread.yield();
+
+                // After execution of child Thread
+                // main thread takes over
+                System.out.println(Thread.currentThread().getName()
+                                    + " in control");
+            }
+        }
+    }
+    Output:
+
+    Thread-0 in control
+    Thread-0 in control
+    Thread-0 in control
+    Thread-0 in control
+    Thread-0 in control
+    main in control
+    main in control
+    main in control
+    main in control
+    main in control
+
+
