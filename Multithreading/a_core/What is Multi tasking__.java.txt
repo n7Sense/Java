@@ -29,8 +29,8 @@ D. Wheere we can use Multithreading concept.
 	To develop Web Server and Application Server (eg Tomcat Server have default 60 threads).
 	
 	When compared with the old languages developing multithreaded application in java is very
-	easy becasuse java provide inbuild support for multithreading with rich API linke
-	Thread, Rinnable, Thread Group.
+	easy becasuse java provide inbuild support for multithreading with rich API like
+	Thread, Runnable, ThreadGroup.
 	
 	
 	

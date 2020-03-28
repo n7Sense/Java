@@ -1,4 +1,4 @@
-JOIN    :       public final synchronized void join()                           throws IE
+    JOIN    :   public final synchronized void join()                           throws IE
                 public final synchronized void join(long millis)                throws IE
                 public final synchronized void join(long millis, int nanos)     throws IE
 ============================================================================

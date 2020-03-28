@@ -1,0 +1,30 @@
+Comparison of yield(), join() and sleep() in Java
+Comparison table yield(), join(), sleep()
+
+Yield():
+
+    1.  If a thread wants to pass its execution to give chance to remaining threads
+        of same priority then we should go for yield()
+    2.  Is it overloaded?   NO
+    3.  Is it final?	    NO
+    4.  Is it throws?	    NO
+    5.  Is it native?	    YES
+    6.  Is it static?       Yes
+
+Join():
+
+    1.  If a thread wants to wait until completing of some other thread then we should go for join()
+    2.  Is it overloaded?   Yes
+    3.  Is it final?	    Yes
+    4.  Is it throws?	    Yes
+    5.  Is it native?	    No
+    6.  Is it static?       No
+
+SLEEP():
+
+     1.  If a thread does not want to perform any operation for a particular amount of time, then it goes for sleep()
+     2.  Is it overloaded?   Yes
+     3.  Is it final?	     No
+     4.  Is it throws?	     Yes
+     5.  Is it native?	     sleep(long milis) is native and sleep(long milis, int nano) is non native
+     6.  Is it static?       Yes

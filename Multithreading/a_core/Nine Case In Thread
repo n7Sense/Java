@@ -18,12 +18,12 @@ Case: 3 : Thread.start()
 =========================
 
 	Thread.start() method is responsible to register the thread with the ThreadScheduler and all other mandetory
-	activity, Hence without executing thread.start() method ther no chance of starting a new thred in java due
-	to this thread,start() mrthod is considered as Heart of MultiThreading.
+	activity, Hence without executing thread.start() method ther no chance of starting a new thread in java due
+	to this thread.start() method is considered as Heart of MultiThreading.
 
 Case : 8 : Life Cycle Of thread
 
-    New/Born --- t.start() ---> Ready/Runnable --- Process Allocated ---> Running --- complete ---> Deat/Terminated
+    New/Born --- t.start() ---> Ready/Runnable --- Process Allocated ---> Running --- complete ---> Death/Terminated
 
 
 Case 9 : IllegalThreadStateException
