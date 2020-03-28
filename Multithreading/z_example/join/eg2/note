@@ -1,0 +1,2 @@
+In the above example Child thread called join() method on main thread
+object hence child thread wait until main thread execution completion
