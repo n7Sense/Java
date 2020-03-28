@@ -1,0 +1,6 @@
+sleep():       public static native void sleep(long milis) throws InterruptedException
+               public static void sleep(long milis, int nanos) throws InterruptedException
+==============================================================
+
+If your thread don't want to perform any operation for a particular amount
+of time then we should go for sleep method.
