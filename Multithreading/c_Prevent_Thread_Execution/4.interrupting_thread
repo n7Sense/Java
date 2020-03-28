@@ -1,0 +1,21 @@
+public void interrupt()
+=======================
+
+a sleeping and waiting thread can be interrupted by using interrupt() method.
+
+?: If no thread are in sleeping or waiting state. so can we say interrupt call is waisted ..?
+
+    when interrupt is execute fisrt it will check is there thread are in waiting or sleeping
+    state.
+    If no thread are in waiting(there is no impact on interrupt) so still interrupt wait for that
+    targeted thread until it's
+    intern into sleeping or waiting state after 1 or 2 year it will wait this all thing take-care by
+    JVM not by main
+    thread.
+    interrupt call never waisted.!
+
+    BUT..?
+    If the target thread never intern into sleeping or waiting state in its life time, then there is no
+    interrupt call, this is the only where the
+    Interrupt Call Will Be waisted .!
+
