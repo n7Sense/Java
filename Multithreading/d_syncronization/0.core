@@ -1,0 +1,9 @@
+Synchronisation
+=================
+
+    Synchronized is a modifier which is applicable only  for methods and block but not for classess and veriables
+    If multiple threads are trying to operate simaltaneiously on same java object then there may be a chance of
+    Data In Consistancey problem
+    To overcome this problem we should go for synchronized key word if a method or block decleared as synchronized
+    then at a time onlu one thread allowed to execute that method or block on the given object, so that Data
+    Inconstitancey problem resolved.
