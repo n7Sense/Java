@@ -9,7 +9,7 @@ All Methods In Thread
 
 4. public static native void sleep(long paramLong) throws InterruptedException;
 
-5. private native void start0();
+5. private native void start();
 
 6. private native boolean isInterrupted(boolean paramBoolean);
 
