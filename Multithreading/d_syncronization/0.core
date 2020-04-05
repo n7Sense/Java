@@ -5,5 +5,21 @@ Synchronisation
     If multiple threads are trying to operate simaltaneiously on same java object then there may be a chance of
     Data In Consistancey problem
     To overcome this problem we should go for synchronized key word if a method or block decleared as synchronized
-    then at a time onlu one thread allowed to execute that method or block on the given object, so that Data
+    then at a time only one thread allowed to execute that method or block on the given object, so that Data
     Inconstitancey problem resolved.
+
+    The main advantage of synchronizedchronized key word is we can resolve Data Inconstitency proble,m, but the main
+    dis-advantage of synchronized key word is it increases waiting time of thread and create performence problem
+    if there no specific reason never recommended to use synchronization.
+
+    How to implement.?
+        Internally synchronization concept in implemented by using lock, every object in java has uUNIQUE LOCK.
+        Whenevr we are using synchronized key word then only lock concept will come into the picture
+
+        If a thread wants to execute synchronized method on the given object first it has to get lock of that
+        object, once thread got th lock then it is allowed to execute any synchronized method on that object.
+
+        onec method execution complete thread releases lock.
+
+        aquiring and releasing lock internally take's care by JVM and programmer not responsible for this activity
+        

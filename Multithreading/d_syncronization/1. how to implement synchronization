@@ -1,0 +1,21 @@
+1.What is lock.? How to implement Synchronization.?
+    Internally synchronization concept in implemented by using lock, every object in java has uUNIQUE LOCK.
+    Whenevr we are using synchronized key word then only lock concept will come into the picture
+
+    If a thread wants to execute synchronized method on the given object first it has to get lock of that
+    object, once thread got th lock then it is allowed to execute any synchronized method on that object.
+
+    onec method execution complete thread releases lock.
+
+    aquiring and releasing lock internally take's care by JVM and programmer not responsible for this activity
+
+Example:
+
+	public class X {
+
+		synchronized void  m1()
+
+		synchronized void m2()
+
+		void m3()
+	}
