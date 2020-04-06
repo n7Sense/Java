@@ -18,7 +18,7 @@ A. MultiTasking :
 		
 B. Advantages of MultiTasking
 		Whether it is Thread based or Process, the main objective of the multitasking is
-		To reduce Idle time of the processor and to reduce reduce response time of the processor and improve
+		To reduce Idle time of the processor and to reduce response time of the processor and improve
 		performence.
 	
 C. Where We should go for Multithreading. Or whta is the main importent application area of Multithreading.?
