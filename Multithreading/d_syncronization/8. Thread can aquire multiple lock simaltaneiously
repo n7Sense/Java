@@ -1,0 +1,25 @@
+
+Is Thread can aquire multiple lock simaltaneiously ? : Yes afcourse but
+from different object
+
+Example :
+
+    public class X {
+
+        public synchronized void m1(){
+        	--> heare thread has lock of 'X' object
+
+        	Y y = new Y();
+
+        	synchronized(y){
+        		--> heare thread has lock of 'X' and 'Y' object
+
+        		Z z = new Z();
+
+        		synchronized(z){
+        			--> heare thread has lock of 'X', 'Y' and 'Z' object
+        		}
+        	}
+        }
+    }
+
