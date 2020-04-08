@@ -19,3 +19,18 @@ Example:
 
 		void m3()
 	}
+
+	main(){
+
+		Thread t1, t2, t3, t4;
+		X x = new X();
+
+		x.m1();		t1	- got lock executing the m1() method, 
+		x.m2();	  	Not allowed (t2, t3, t4), because t1 already got lock in 'x' object
+		x.m3();	 	Allowed any object.
+
+	}
+
+    NOTE: while a thread executing synchronized method the remining thread not allowed to
+    execute any synchronized method simaltaneiously on the same object. But remining thread
+    are allowed to execute non- synchronized method simaltaneiously.

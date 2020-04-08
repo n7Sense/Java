@@ -1,0 +1,7 @@
+
+1. if multiple threads are operating on same java object then Synchronization
+   is required.
+
+ 2. if multiple threads are operating on multiple java object then Synchronization
+       is not required.
+

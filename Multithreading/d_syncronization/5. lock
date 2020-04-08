@@ -1,0 +1,13 @@
+
+1. in java there are have 2-types of lock
+    a) Object Level Lock
+    b) Class Level Lock
+
+ 2. Class Level Lock
+        for every class one 'Class class object' created internally in JVM Architecture
+        this topic is covered.
+
+ 3. If your thread want to execute a static synchronized method then thread required
+    class level lock, once thread got class level lock then it is allowed to execute
+    any static synchronized method of that class.
+    Once method execute complete autometically thread releases lock
