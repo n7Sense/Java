@@ -1,0 +1,9 @@
+Definition:
+
+    If multiple threads are operating on same Java Object simaltaneiously then
+    there may be a chance of Data In Consistency problem, this problem is nothing
+    but Race Condition
+
+    We can overcome this problem by using synchronized key word.
+
+
