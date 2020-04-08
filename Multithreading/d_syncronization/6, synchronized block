@@ -1,0 +1,33 @@
+1. if very few lines of the code required synchronization then it is not recommended
+    to decleare entire method as synchronized we have to enclose those few lines of
+    the code by using synchronized block.
+
+2. The main advantages of synchronized block over synchronized method is it reduces
+	waithing time of thread and improve performence of the system.
+
+3. ho to implement .?
+
+	
+	synchronized(this){
+		---code--
+		---code--
+		---code--
+	}
+
+	Note : 'this' mean to get lock of current objeect.
+
+4. but if you want to get lock for 'particula' object like 'Book objOfB'
+
+	synchronized(objOfB){
+		---code--
+		---code--
+		---code--
+	}
+
+5. how to get 'class' level lock for synchronized block
+
+	synchronized(Display.class){
+		---code--
+		---code--
+		---code--
+	}
