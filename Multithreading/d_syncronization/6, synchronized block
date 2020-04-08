@@ -31,3 +31,16 @@
 		---code--
 		---code--
 	}
+
+
+ 6.lock concept applicable Object type and class type but not for primitive hence
+ 	we cant pass primitive type into synchronized block.
+	otherwise it will throws Compile Time Error : Unexpected Type :
+ 	
+ 	int x =10;
+
+ 	synchronized(x){
+
+ 	}
+
+ 	Compile Time Error : Unexpected Type : fount int
