@@ -1,0 +1,12 @@
+
+wait(), notify() and notifyAll() pesent in Object class but not in thread class
+because thread can call this method on any 'Java Object'
+
+To call wait(), notify() and notifyAll() methods on any object, thread should
+br owner of that object i.e that thread should has lock of that object that is
+the thread should be inside synchronized area.
+
+Hence we can call wait, notify, and notifyAll only from synchronized area
+otherwise we will get 
+RunTime Exception :  IllegalMonitorStateException : if the current thread is not
+the owner of the object's monitor.

@@ -1,0 +1,18 @@
+
+Inter Thread Communication
+============================
+
+Two threads can communicate with each other by using the following methods.
+
+	a) public final native void notify();
+	b) public final native void notifyAll();
+	c) public final void wait();
+	these all methods are present in Object.class but not in Thread.class
+	
+The thread which is expecting updation is responsible to call wait() method
+then immediately the thread will intern into waiting state.
+
+The thread which is responsible to perform updation, after perform updation
+it is responsible to call notify() method then waiting thread will get that
+notification and continue it's execution with those updated items.
+
