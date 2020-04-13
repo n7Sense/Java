@@ -1,0 +1,5 @@
+If thread call notify method on any object it releases the lock of that object
+but may not immediately
+
+Except wait wait, notify, and notifyAll there is no other method where thread
+releases the lock
